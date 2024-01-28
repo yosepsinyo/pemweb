@@ -1,0 +1,43 @@
+<html>
+    <title>Tugas13</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <center><a href="Tugas13.html"><img src="Banner MH.jpg" width="1300" height="280"></a></center>
+        <link rel="stylesheet" href="w3.css">
+<body>
+    <div class="w3-container">
+    </div>
+    <div class="w3-bar w3-pink">
+        <button class="w3-bar-item w3-button" onclick="openKota('Zinogre')">Zinogre</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Deviljho')">Deviljho</button>
+            <button class="w3-bar-item w3-button" onclick="openKota('Nergigante')">Nergigante</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Glavenus')">Glavenus</button>
+    </div>
+    <div id="Zinogre" class="w3-container kota w3-animate-fading" style="display:none">
+        <h2>Zinogre</h2>
+        <a href="Tugas13.html"><img src="Zinogre.jpg"></a>
+    </div>
+    <div id="Deviljho" class="w3-container kota w3-animate-bottom" style="display:none">
+        <h2>Deviljho</h2>
+        <a href="Tugas13.html"><img src="Deviljho.jpg" width="800" height="500"></a>
+    </div>
+    <div id="Nergigante" class="w3-container kota w3-animate-top" style="display:none">
+        <h2>Nergigante</h2>
+        <a href="Tugas13.html"><img src="Nergigante.jpg" width="800" height="500"></a>
+    </div>
+    <div id="Glavenus" class="w3-container kota w3-animate-zoom" style="display:none">
+        <h2>Glavenus</h2>
+        <a href="Tugas13.html"><img src="Glavenus.jpg" width="800" height="500"></a>
+    </div>
+<script>
+    function openKota(namakota) {
+        var i;
+            var x = document.getElementsByClassName("kota");
+        for (i = 0; i < x.length; i++) 
+{
+    x[i].style.display = "none";
+}
+    document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
